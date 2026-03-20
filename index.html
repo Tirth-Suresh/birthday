@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy Birthday Sneha Bhabhi 🎂</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+<div id="lockScreen" class="screen active">
+  <h2>🔐 Enter Password</h2>
+  <input type="password" id="password" placeholder="Enter password">
+  <button onclick="unlock()">Enter</button>
+</div>
+
+<div class="hearts"></div>
+
+<div class="screen" id="screen1"><h2>🎁 Loading Surprise...</h2></div>
+<div class="screen" id="screen2"><h1>🎉 Happy Birthday Sneha Bhabhi 🎉</h1></div>
+<div class="screen" id="screen3"><p id="typing"></p></div>
+<div class="screen" id="screen4"><img id="slide" src="photo1.jpg"></div>
+<div class="screen" id="screen5">
+  <h1>🎂 Make a Wish 🎂</h1>
+  <div class="cake" onclick="cutCake()">🎂</div>
+</div>
+<div class="screen" id="screen6">
+  <h1>💖 Enjoy Your Day 💖</h1>
+  <button onclick="playVoice()">🎤 Play Message</button>
+  <br><br>
+  <button onclick="shareWhatsApp()">📲 Share</button>
+</div>
+
+<audio id="music" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="voice">
+  <source src="voice.mp3" type="audio/mpeg">
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
